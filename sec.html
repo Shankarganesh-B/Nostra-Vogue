@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Nostra Vogue</title>
+</head>
+
+<body class="flex flex-col">
+    <header id="header" class="w-svw">
+        <div class="h-14 text-3xl container:100% flex justify-center items-center gap-16 bg-gray-500">
+            <p>Sign Up and <b>GET 20% OFF</b> for your first Order</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-9">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </div>
+
+        <div class="px-6 h-20 container:100% flex justify-between items-center bg-blue-800">
+            <p class="text-4xl font-semibold">Nostra</p>
+
+            <div class="text-2xl mx-10 flex gap-14">
+                <p id="home">Home</p>
+                <a id="section-1-button" href="#section-1">New Arrival</a>
+                <a href="#section-2">Trending</a>
+                <p id="collections">Collections</p>
+                <p id="contact">Contact Us</p>
+                <a href="sec.html">Cart</a>
+            </div>
+        </div>
+    </header>
+    <main class="bg-red-500">
+        <section class="bg-yellow-400">
+            <div class="container">
+                <h3>Product Name</h3>
+                <div class="relative w-[300px] h-[450px] mx-auto overflow-hidden">
+                    <input type="radio" name="slider" id="slide1" checked class="hidden">
+                    <input type="radio" name="slider" id="slide2" class="hidden">
+                    <input type="radio" name="slider" id="slide3" class="hidden">
+
+                    <div class="slides">
+                        <label for="slide1" class="slide">
+                            <img class="w-full h-full object-cover" src="./images/test/0.webp" alt="Image 1">
+                        </label>
+                        <label for="slide2" class="slide">
+                            <img class="w-full h-full object-cover" src="./images/test/00.webp" alt="Image 2">
+                        </label>
+                        <label for="slide3" class="slide">
+                            <img class="w-full h-full object-cover" src="./images/test/1000.webp" alt="Image 3">
+                        </label>
+                    </div>
+
+                    <div class="absolute left-4 bottom-3 flex space-x-2">
+                        <label for="slide1" class="bg-white rounded-full p-2 cursor-pointer">●</label>
+                        <label for="slide2" class="bg-white rounded-full p-2 cursor-pointer">●</label>
+                        <label for="slide3" class="bg-white rounded-full p-2 cursor-pointer">●</label>
+                    </div>
+                </div>
+                <p>With its trendy silhouette and chic details, this dress is your new favorite for effortless elegance.
+                </p>
+                <p>Rs3500</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

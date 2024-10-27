@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Nostra Vogue</title>
+</head>
+
+<body class="flex flex-col w-svw relative bg-stone-700">
+    <header id="header" class="w-svw mb-5 sticky top-0 z-30 bg-stone-700">
+        <div
+            class="closer h-14  md:text-2xl xl:text-3xl container:100% flex justify-center items-center xl:gap-16 bg-stone-200 mb-5">
+            <p class="mr-4 text-stone-700">Sign Up and <b>GET 20% OFF</b> for your first Order</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-9  border-2 border-stone-700 close text-stone-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </div>
+        <div class="px-6 h-20 container:100% flex justify-between items-center bg-stone-50 ">
+            <p class="sm:text-xl lg:text-4xl font-semibold text-stone-700">Nostra Vogue</p>
+            <div
+                class="headings sm:text-sm md:text-xl xl:text-2xl mx-10 flex sm:gap-4 md:gap-7 lg:gap-14 text-stone-700">
+                <p id="home" class="home hidden">Home</p>
+                <a id="section-1-button" href="#section-1">New Arrival</a>
+                <a href="#section-2">Trending</a>
+                <p id="collections" class="collections">Collections</p>
+                <p id="contact" class="contact">Contact Us</p>
+            </div>
+        </div>
+    </header>
+    
+    <main id="third-main" class="hidden flex-col relative w-svw bg-stone-700 h-fit p-5">
+        <section
+            class=" h-full font-bold flex flex-row justify-around align-middle container mx-auto bg-stone-200 text-stone-700 ">
+            <div
+                class="h-full font-bold flex flex-col justify-center align-middle container mx-auto bg-stone-200 text-stone-700 mb-5">
+                <div>
+                    <h1 class="font-bold text-3xl text-center mb-4">Contact Us</h1>
+                    <p class="text-center container mx-auto w-4/5 mb-4">Got a technical issue? Want to send feedback
+                        about a
+                        beta feature? Need details about our Business plan? Let us know.</p>
+                </div>
+                <div class="container mx-auto flex flex-col w-4/5 font-bold">
+                    <ul class="mb-4">
+                        <li class="mb-1 pl-1">Name</li>
+                        <input class="px-1 border border-black w-11/12 rounded text-black" type="text"
+                            placeholder="Name">
+                    </ul>
+                    <ul class="mb-4">
+                        <li class="mb-1 pl-1">Email</li>
+                        <input class="px-1 border border-black w-11/12 rounded text-black" type="email"
+                            placeholder="name@email.com">
+                    </ul>
+                    <ul class="mb-4">
+                        <li class="mb-1 pl-1">Your message</li>
+                        <textarea class="px-1 border border-black w-11/12 rounded text-black" type="messagebox"
+                            placeholder="Message"></textarea>
+                    </ul>
+                </div>
+                <div class="faq">
+                    <h2>Frequently Asked Questions</h2>
+
+                    <div class="faq-item">
+                        <button class="faq-question">General Questions</button>
+                        <div class="faq-answer">
+                            <p><strong>Q: What is your return policy?</strong><br>A: You can return any item within 30
+                                days of purchase for a full refund.</p>
+                            <p><strong>Q: How can I track my order?</strong><br>A: Once your order has shipped, you will
+                                receive an email with a tracking link.</p>
+                            <p><strong>Q: Do you offer international shipping?</strong><br>A: Yes, we ship to many
+                                countries worldwide. Shipping costs vary based on the destination.</p>
+                            <p><strong></strong><br></p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Account Management</button>
+                        <div class="faq-answer">
+                            <p><strong>Q: How do I create an account?</strong><br>A: Click on the "Sign Up" button at
+                                the top of the page and fill in the required information.</p>
+                            <p><strong>Q: I forgot my password. What should I do?</strong><br>A: Click on "Forgot
+                                Password?" on the login page, and follow the instructions to reset it.</p>
+                            <p><strong>Q: How can I update my account information?</strong><br>A: Log in to your account
+                                and navigate to the "Account Settings" section to make changes.</p>
+                            <p><strong></strong><br></p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Payment and Billing</button>
+                        <div class="faq-answer">
+                            <p><strong>Q: What payment methods do you accept?</strong><br>A: We accept all major credit
+                                cards, PayPal, and Apple Pay.</p>
+                            <p><strong>Q: Is my payment information secure?</strong><br>A: Yes, we use SSL encryption to
+                                ensure that your payment information is secure.</p>
+                            <p><strong>Q: Can I get a receipt for my purchase?</strong><br>A: Yes, you will receive an
+                                electronic receipt via email after your order is completed.</p>
+                            <p><strong></strong><br></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <br>
+        <section>
+            <iframe id="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.073822746443!2d-122.4194154846816!3d37.77492927975968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808581f14e1b4d63%3A0x5e9c4b0f1a3e0bc0!2sSan%20Francisco%2C%20CA%2094102%2C%20USA!5e0!3m2!1sen!2sin!4v1635380920300!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+
+    </main>
+
+    
+    <main id="sec-main" class=" hidden flex-col  relative w-svw bg-stone-700">
+        <aside class="absolute z-20 top-0 left-0 p-1 w-24 h-fit bg-stone-200 bg-opacity-45 text-stone-700 ">
+            <p id="filter-box" class="cursor-pointer">Filter >></p>
+            <input type="checkbox" id="filter-toggle" class="filter-toggle" />
+            <label for="filter-toggle" class="filter-label">Click Here</label>
+
+            <div class="filters max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                <p>Gender</p>
+                <div class="gender-options">
+                    <label>
+                        <input type="checkbox" class="class-check" value="men"> Men
+                    </label>
+                    <label>
+                        <input type="checkbox" class="class-check" value="women"> Women
+                    </label>
+                </div>
+
+                <p>Occasions</p>
+                <div class="occasion-options">
+                    <label>
+                        <input type="checkbox" class="class-check" value="suit"> Formal
+                    </label>
+                    <label>
+                        <input type="checkbox" class="class-check" value="shirt"> Casual
+                    </label>
+                    <label>
+                        <input type="checkbox" class="class-check" value="midi"> Event Wear
+                    </label>
+                </div>
+
+                <button id="reset-button">Reset</button>
+            </div>
+
+        </aside>
+
+        <section class="container:100% w-full flex flex-col justify-between items-center bg-stone-700 sticky top-20">
+            <div class="py-4 h-20 w-11/12 flex justify-center  rounded-md top-0 sticky">
+                <input id="searchbox" type="text" class="w-11/12 rounded-md outline-none text-black">
+            </div>
+            <div class="scrollbar-hide flex flex-wrap justify-center gap-4 h-screen overflow-y-auto">
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg py-2 h-fit men gray black crimson shirt pant">
+                    <img class="first block h-[37.5rem] w-[25rem]" src="./images/test/0.webp" alt="">
+                    <img class="second hidden h-[37.5rem] w-[25rem]" src="./images/test/00.webp" alt="">
+                    <img class="third hidden h-[37.5rem] w-[25rem]" src="./images/test/000.webp" alt="">
+                    <h4 class="px-2 text-xl">Summer Street combo</h4>
+                    <p class="px-2 text-xl">Rs5750</p>
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg py-2 men h-fit gray black coat">
+                    <img class="first block h-[37.5rem] w-[25rem]" src="./images/test/1.webp" alt="">
+                    <img class="second hidden h-[37.5rem] w-[25rem]" src="./images/test/11.webp" alt="">
+                    <h4 class="px-2 text-xl">Classic Overcoat</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+                </div>
+
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 men brown pant">
+                    <img class="first block h-[37.5rem]  w-[25rem]" src="./images/test/2.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/22.webp" alt="">
+                    <h4 class="px-2 text-xl">Bold Casual Trousers</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2  men gray black jacket">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/3.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/33.webp" alt="">
+                    <h4 class="px-2 text-xl">Urban Jacket</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2  men violet blue shirt">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/4.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/44.webp">
+                    <h4 class="px-2 text-xl">Suburban Shirt</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2  men white hoodie">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/5.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/55.webp" alt="">
+                    <h4 class="px-2 text-xl">White Hoodie</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2  men gray black shirt">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/6.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/66.webp" alt="">
+                    <h4 class="px-2 text-xl">Fleece Pullover</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2   women blue shirt">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/7.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/77.webp" alt="">
+                    <h4 class="px-2 text-xl">Skyline Silk Shirt</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2  women white blue shirt">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/8.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/88.webp" alt="">
+                    <h4 class="px-2 text-xl">White Stripe Blouse</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2  women gray black coat suit">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/9.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/99.webp" alt="">
+                    <h4 class="px-2 text-xl">Gradiant Charcoal Jacket</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2  women white shirt top">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/a.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/aa.webp" alt="">
+                    <h4 class="px-2 text-xl">Rusic Classic Top</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2  women crimson red maxi midi top">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/b.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/bb.webp" alt="">
+                    <h4 class="px-2 text-xl">Crimson Reverie Dress</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 women  crimson red midi top">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/c.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/cc.webp" alt="">
+                    <h4 class="px-2 text-xl">Ruby Polo Midi</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 women brown midi top">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/d.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/dd.jpg" alt="">
+                    <h4 class="px-2 text-xl">Savanna Chic Dress</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2  women brown top coat">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/e.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/ee.webp" alt="">
+                    <h4 class="px-2 text-xl">Thick Luxe Overcoat</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 women pastel green pant shirt ">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/f.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/ff.webp" alt="">
+                    <img class="third hidden h-[37.5rem]  w-[25rem]" src="./images/test/fff.webp" alt="">
+                    <h4 class="px-2 text-xl">Mint Serenity Set</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col items-center justify-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2   brown white shirt">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/g.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/gg.webp" alt="">
+                    <h4 class="px-2 text-xl">Tropical Shade shirt</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 men blue pant ">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/h.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/hh.jpg" alt="">
+                    <h4 class="px-2 text-xl">Nerd Blue Jean</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 men  brown jacket">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/i.webp" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/ii.webp" alt="">
+                    <h4 class="px-2 text-xl">Luxe Layer Jacket</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 men brown gray shirt">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/j.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/jj.jpg" alt="">
+                    <h4 class="px-2 text-xl">Evening Shade Shirt</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2  men violet blue gray top sweatshirt">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/k.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/kk.jpg" alt="">
+                    <h4 class="px-2 text-xl">Garage Man Sweatshirt</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 men tshirt t-shirt shirt  ">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/l.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/ll.jpg" alt="">
+                    <h4 class="px-2 text-xl">Super Nova T-shirt</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 women  white midi top">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/m.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/mm.jpg" alt="">
+                    <h4 class="px-2 text-xl">Feather White Midi</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 women gray black blouse top">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/n.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/nn.jpg" alt="">
+                    <h4 class="px-2 text-xl">Fitted Grace Top</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class=" parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2  women crimson red  coat">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/o.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/oo.jpg" alt="">
+                    <h4 class="px-2 text-xl">Regal Red Overcoat</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class=" parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 women pastel green midi maxi ">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/p.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/pp.jpg" alt="">
+                    <h4 class="px-2 text-xl">Sculpted Green Cloak</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2  women crimson red midi maxi">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/q.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/qq.jpg" alt="">
+                    <h4 class="px-2 text-xl">Crimson Shade Cloak</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 women gray black midi top ">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/r.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/rr.jpg" alt="">
+                    <h4 class="px-2 text-xl">Glam Noir Dress</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 men crimson red jacket">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/s.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/ss.jpg" alt="">
+                    <h4 class="px-2 text-xl">Crimson Heat Jacket</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 men pastel green shirt">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/t.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/tt.jpg" alt="">
+                    <h4 class="px-2 text-xl">Pastel Breeze Shirt</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2  men gray black vest">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/u.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/uu.jpg" alt="">
+                    <img class="third hidden h-[37.5rem]  w-[25rem]" src="./images/test/uuu.jpg" alt="">
+                    <h4 class="px-2 text-xl">Silver Chrome Vest</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+                <div
+                    class="parentprod flex flex-col justify-center items-center gap-5 w-[26.25rem] bg-stone-200 text-stone-700 rounded-t-lg h-fit py-2 men gray black jacket">
+                    <img class="first inline-block h-[37.5rem]  w-[25rem]" src="./images/test/v.jpg" alt="">
+                    <img class="second hidden h-[37.5rem]  w-[25rem]" src="./images/test/vv.jpg" alt="">
+                    <h4 class="px-2 text-xl">Chill Vibes Jacket</h4>
+                    <p class="px-2 text-xl">Rs14750</p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <main id="og-main" class="w-svw px-10 flex flex-col items-center">
+        <section class="container:100% flex justify-center mb-5">
+            
+            <div class="carousel-box flex  w-full relative overflow-hidden">
+                <p id="left-button" class="absolute top-1/2 left-[10%] sm:text-6xl lg:text-9xl z-10">&lt;</p>
+                <div class="content-container absolute top-1/3 text-center text-2xl font-bold w-full z-20 ">
+                    <h1>Level up your style with our</h1>
+                    <h4>Summer Collections</h4>
+                    <button>Shop Now </button>
+                </div>
+                <div class="image-container flex ">
+                    <img src="./images/dupe/1.jpg" alt="" class="image w-screen">
+                    <img src="./images/dupe/2.jpg" alt="" class="image w-screen">
+                    <img src="./images/dupe/1.jpg" alt="" class="image w-screen">
+                </div>
+                <p id="right-button" class="absolute top-1/2 right-[10%] sm:text-6xl lg:text-9xl z-10">&gt;</p>
+            </div>
+        </section>
+
+        
+        <section
+            class="container:100% w-full h-32 sm:text-xs lg:text-2xl text-black flex justify-between  items-center gap-7 text-center bg-stone-700 mb-5">
+            <div
+                class="logo-box pogobox flex-1 flex-col-reverse min-w-14 justify-center items-center bg-stone-200 rounded-t-full">
+                <p class="text-stone-700">Puma</p>
+                <img src="./images/adidas.png" alt="logo" class="logo w-full h-auto">
+            </div>
+            <div
+                class="logo-box pogobox  flex-1 flex-col-reverse min-w-14 justify-center items-center bg-stone-200 rounded-t-full">
+                <p class="text-stone-700">Adidas</p>
+                <img src="./images/adidas.png" alt="logo" class="logo w-full h-auto">
+            </div>
+            <div
+                class="logo-box pogobox  flex-1 flex-col-reverse min-w-14 justify-center items-center bg-stone-200 rounded-t-full">
+                <p class="text-stone-700">Zara</p>
+                <img src="./images/adidas.png" alt="logo" class="logo w-full h-auto">
+            </div>
+            <div
+                class="logo-box pogobox  flex-1 flex-col-reverse min-w-14 justify-center items-center bg-stone-200 rounded-t-full">
+                <p class="text-stone-700">Nostra</p>
+                <img src="./images/adidas.png" alt="logo" class="logo w-full h-auto">
+            </div>
+            <div
+                class="logo-box pogobox  flex-1 flex-col-reverse min-w-14 justify-center items-center bg-stone-200 rounded-t-full">
+                <p class="text-stone-700">Twitch</p>
+                <img src="./images/adidas.png" alt="logo" class="logo w-full h-auto">
+            </div>
+            <div
+                class="logo-box pogobox  last max-sm:hidden flex-1 flex-col-reverse min-w-14 justify-center items-center bg-stone-200 rounded-t-full">
+                <p class="text-stone-700">Reptile</p>
+                <img src="./images/adidas.png" alt="logo" class="logo w-full h-auto">
+            </div>
+            <div
+                class="logo-box pogobox  last max-sm:hidden flex-1 flex-col-reverse min-w-14 justify-center items-center bg-stone-200 rounded-t-full">
+                <p class="text-stone-700">Machine</p>
+                <img src="./images/adidas.png" alt="logo" class="logo w-full h-auto">
+            </div>
+        </section>
+
+        
+        <section class="container:100% w-full bg-stone-700">
+            
+            <div
+                class="py-5 px-4 sm:text-xs lg:text-xl 2xl:text-2xl font-extrabold flex justify-between max-sm:justify-center items-center text-stone-700 bg-stone-200 mb-3 rounded-lg">
+                <div class="max-sm:hidden ">
+                    <h3>We Provide Best</h3>
+                    <h3>Customer Experiences</h3>
+                </div>
+                <div>
+                    <h4 class="max-sm:text-center">We ensure that our customer have the best shopping experience</h4>
+                </div>
+            </div>
+
+            
+            <div
+                class="flex flex-row max-sm:flex-wrap max-sm:justify-center sm:justify-between gap-5 bg-stone-700  mb-5 border-4 border-stone-400 p-4 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                <div
+                    class="guaranteed p-4 text-[.75rem] sm:text-[1rem] max-w-[400px] text-center rounded-md bg-gradient-to-r from-stone-200 to-stone-400 text-stone-700">
+                    <img class="mx-auto" src="./images/New folder/tag1.png" alt="tag-icon">
+                    <h5>Original Products</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque vero atque numquam
+                        minus placeat odio sed error iure ipsa.</p>
+                </div>
+
+                <div
+                    class="guaranteed flex flex-col p-4 text-[.75rem] sm:text-[1rem] text-center max-w-[400px]   rounded-md bg-gradient-to-r from-stone-200 to-stone-400 text-stone-700">
+                    <img class="mx-auto" src="./images/New folder/tag2.png" alt="tag-icon">
+                    <h5>Satisfaction Guarantee</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque vero atque numquam
+                        minus placeat odio sed error iure ipsa.</p>
+                </div>
+
+                <div
+                    class="guaranteed p-4 text-[.75rem] sm:text-[1rem] max-w-[400px] text-center rounded-md bg-gradient-to-r from-stone-200 to-stone-400 text-stone-700">
+                    <img class="mx-auto" src="./images/New folder/tag3.png" alt="tag-icon">
+                    <h5>New Arrival Everyday</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque vero atque numquam
+                        minus placeat odio sed error iure ipsa.</p>
+                </div>
+                <div
+                    class="guaranteed p-4 text-[.75rem] sm:text-[1rem] max-w-[400px] text-center rounded-md bg-gradient-to-r from-stone-200 to-stone-400 text-stone-700">
+                    <img class="mx-auto" src="./images/New folder/tag4.png" alt="tag-icon">
+                    <h5>Fast and Free Shipping</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque vero atque numquam
+                        minus placeat odio sed error iure ipsa.</p>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section id="section-1"
+            class="container:100% w-full flex flex-col justify-center items-center bg-stone-200 text-stone-700 px-2 pt-1 pb-2 rounded-lg mb-5">
+            <h2 class="md:self-start text-3xl max-md:text-center mb-2">New Arrivals</h2>
+            <div class="w-full max-h-fit flex max-lg:flex-wrap justify-around items-center gap-5 bg-transparent ">
+                <div
+                    class="showoff flex justify-center items-end  bg-[url('./images/test/mm.jpg')] bg-contain bg-no-repeat bg-center w-[18.75rem] h-[28.125rem] relative">
+                    <button
+                        class="anim btnshop absolute bottom-1/3 p-2 text-stone-700 rounded-lg bg-stone-200 border-stone-700 shadow-xl">Shop
+                        Now</button>
+                </div>
+                <div
+                    class="showoff flex justify-center items-end  bg-[url('./images/test/kk.jpg')] bg-contain bg-no-repeat bg-center w-[18.75rem] h-[28.125rem] relative">
+                    <button
+                        class="anim btnshop absolute bottom-1/3 p-2 text-stone-700 rounded-lg bg-stone-200 border-stone-700 shadow-xl">Shop
+                        Now</button>
+                </div>
+                <div
+                    class="showoff flex justify-center items-end  bg-[url('./images/test/fff.webp')] bg-contain bg-no-repeat bg-center w-[18.75rem] h-[28.125rem] relative">
+                    <button
+                        class="anim btnshop absolute bottom-1/3 p-2 text-stone-700 rounded-lg bg-stone-200 border-stone-700 shadow-xl">Shop
+                        Now</button>
+                </div>
+                <div
+                    class="showoff flex justify-center items-end  bg-[url('./images/test/ee.webp')] bg-contain bg-no-repeat bg-center w-[18.75rem] h-[28.125rem] relative">
+                    <button
+                        class="anim btnshop absolute bottom-1/3 p-2 text-stone-700 rounded-lg bg-stone-200 border-stone-700 shadow-xl">Shop
+                        Now</button>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="section-2"
+            class="container:100% w-full flex flex-col justify-center items-center bg-stone-200 text-stone-700 px-2 pt-1 pb-2 rounded-lg mb-5">
+            <h4 class="self-start text-3xl max-md:text-center mb-2">Most Wanted</h4>
+            <div class="w-full flex max-lg:flex-wrap justify-around gap-5 bg-transparent ">
+                <div
+                    class="showoff2 w-[18.75rem] h-[28.125rem] flex flex-col justify-between bg-[url('./images/test/uuu.jpg')] bg-cover bg-center ">
+                    <h5
+                        class="p-2 px-3 text-2xl text-black self-start bg-transparent border-2 border-stone-700 shadow-xl">
+                        Sale</h5>
+                    <div
+                        class="self-end bg-[url('./images/animate/like.png')] bg-cover bg-center w-10 h-10 hover:bg-[url('./images/animate/like.gif')] hover:bg-contain bg-white">
+                    </div>
+                </div>
+                <div
+                    class="showoff2 w-[18.75rem] h-[28.125rem] flex flex-col justify-between bg-[url('./images/test/oo.jpg')] bg-cover bg-center">
+                    <h5
+                        class="p-2 px-3 text-2xl text-black self-start bg-transparent border-2 border-stone-700 shadow-xl">
+                        Sale</h5>
+                    <div
+                        class="self-end bg-[url('./images/animate/like.png')] bg-cover bg-center w-10 h-10 hover:bg-[url('./images/animate/like.gif')] hover:bg-contain bg-white">
+                    </div>
+                </div>
+                <div
+                    class="showoff2 w-[18.75rem] h-[28.125rem] flex flex-col justify-between bg-[url('./images/test/0000.webp')] bg-cover bg-center">
+                    <h5
+                        class="p-2 px-3 text-2xl text-black self-start bg-transparent border-2 border-stone-700 shadow-xl">
+                        Sale</h5>
+                    <div
+                        class="self-end bg-[url('./images/animate/like.png')] bg-cover bg-center w-10 h-10 hover:bg-[url('./images/animate/like.gif')] hover:bg-contain bg-white">
+                    </div>
+                </div>
+                <div
+                    class="showoff2 w-[18.75rem] h-[28.125rem] flex flex-col justify-between bg-[url('./images/test/cc.webp')] bg-cover bg-center">
+                    <h5
+                        class="p-2 px-3 text-2xl text-black self-start bg-transparent border-2 border-stone-700 shadow-xl">
+                        Sale</h5>
+                    <div
+                        class="self-end bg-[url('./images/animate/like.png')] bg-cover bg-center w-10 h-10 hover:bg-[url('./images/animate/like.gif')] hover:bg-contain bg-white">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section
+            class="container:100% w-full flex justify-around items-center bg-gradient-to-r from-orange-400 to-yellow-200 mb-5 rounded-lg">
+            <div class="w-[28rem] h-[18rem] bg-[url('./images/Showcase/5.jpg')] bg-cover bg-center"></div>
+            <div
+                class="w-[28rem] h-[18rem] px-5 text-xl sm:text-3xl text-center font-extrabold flex flex-col-reverse gap-5 justify-center items-center bg-transparent text-stone-800">
+                <button class="anim">Shop Now</button>
+                <h3>35% OFF on this for the first 30 Customers</h3>
+                <h2>Limited Offer</h2>
+            </div>
+        </section>
+
+        
+        <section
+            class=" py-2 container:100% w-full flex flex-col gap-5 items-center bg-stone-200 text-stone-700 mb-5 rounded-lg">
+            <h2 class="text-center text-5xl font-extrabold">Join Our News Letter</h2>
+            <p class="text-center text-2xl font-semibold ">Signup for our email newspaper to get exclusive discounts,
+                updates, and more</p>
+            <input type="text" class="px-1 w-2/5  text-black focus:outline-none">
+            <button
+                class="anim px-4 py-2 text-center text-2xl text-stone-200 font-semibold rounded-lg bg-black">Subscribe</button>
+        </section>
+    </main>
+
+    <footer class="mt-5 w-svw px-5 py-4 flex flex-col-reverse bg-stone-200 text-stone-700 ">
+        <p class="text-xl font-semibold ">@ 2024 Nostra.com</p>
+        <div class="socials h-14 flex gap-9 items-center w-fit px-4 bg-stone-400 mt-2 mb-2 rounded-full">
+            <a href="https://www.instagram.com/gucci/"><img class="anim" src="./images/socials/socials1.png"  alt="social-link"></a>
+            <a href="https://www.gucci.com/"><img class="anim" src="./images/socials/socials2.png" alt="social-link"> </a>
+            <a href="https://www.facebook.com/GUCCI/"><img class="anim" src="./images/socials/socials3.png" alt="social-link"></a>
+        </div>
+        <p class="text-4xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel, ut repellat quis
+            culpa nemo.</p>
+        <h2 class="text-5xl font-extrabold">Nostra</h2>
+    </footer>
+
+    
+    <script src="power.js"></script>
+</body>
+
+</html>
